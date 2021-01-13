@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
+:root {
+  --my-grey: rgb(161, 160, 160);
+}
 * {
   margin: 0;
   padding: 0;
@@ -117,7 +119,7 @@ body {
 }
 
 .main-nav__links {
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
 }
@@ -141,6 +143,46 @@ body {
 .main-nav__actions:last-child {
   border-right: 1px solid rgb(202, 202, 202);
 }
+
+.hidden-menu__guitar {
+  display: none;
+}
+
+.main-nav__links:hover .hidden-menu__guitar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: absolute;
+  margin: 27px 0 0 0;
+  padding: 1rem;
+  height: auto;
+  width: 100vw;
+  right: 0;
+  background-color: white;
+  border-top: 1px solid var(--my-grey);
+  box-shadow: 0px 5px 5px grey;
+}
+
+.hidden-menu__card {
+}
+
+.hidden-menu__card h3 {
+  margin: 0 1rem;
+  padding: 1rem 0;
+  color: black;
+  font-size: 1rem;
+  border-bottom: 1px solid var(--my-grey);
+}
+
+.hidden-menu__card ul {
+  padding: 1rem;
+}
+
+.hidden-menu__card li {
+  margin: 0px;
+}
+
+/* Slideshow */
+
 .container {
   width: 90%;
   max-width: 1400px;
