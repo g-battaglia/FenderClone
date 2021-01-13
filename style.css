@@ -372,6 +372,7 @@ body {
   .top-footer-links {
     color: white;
     grid-column: 1/2;
+  }
 }
 
 @media (max-width: 786px) {
@@ -385,4 +386,5 @@ body {
 
   .top-footer-links {
     flex-direction: column;
+  }
 }
